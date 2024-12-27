@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #dfe4ea, #a4b0be); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #000;
+    max-width: 90%;
+    width: 100%;
+}
+
+.score {
+    font-size: 30px;
+    color: #2f3542;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.score span {
+    font-size: 36px;
+    color: #00a8ff;
+}
+
+/* Стиль для кнопок */
+.button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #000;
+}
+
+.house {
+    position: relative;
+    width: 25%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.house_img {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.House_div {
+    color: white;
+    border: 1px solid #2c3e50;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 50%;
+}
+
+.house_info h2 {
+    background-color: #f1f1f1;
+    color: #2c3e50;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.house_info {
+    width: 100%;
+    padding: 10px;
+}
+
+.house_upb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buyunits, .upgradeunits {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.buyunits {
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.house-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.costhouse_but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.start {
+    position: absolute;
+    top: 20vh; 
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_div {
+    max-width: 600px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.start_div h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.start_button {
+    background-color: #00a8ff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.start_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px #000000;
+}
+
+.start_button img {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.p {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #bdc3c7;   
+}
+
+.troph {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.pp {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #000;
+    width: 32%;
+}
+
+.achivh1 {
+    padding: 50px 0;
+}
+
+.troph_img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#troph_img1_n {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#troph_img2_n {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#troph_img3_n {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.troph_p {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 2300px) {
+    .achivh1 {
+        font-size: 60px;
+    }
+    
+    .container {
+        max-width: 90%; 
+        padding: 100px;
+    }
+
+    .house {
+        width: 25%;
+        height: 660px;
+    }
+
+    .score {
+        font-size: 66px;
+    }
+
+    .score span {
+        font-size: 79px;
+    }
+
+    .button {
+        font-size: 40px;
+        padding: 26px 55px;
+    }
+
+    .house_info h2 {
+        font-size: 44px;
+    }
+
+    .house-text {
+        font-size: 31px;
+    }
+
+    .buyunits, .upgradeunits {
+        font-size: 35px;
+        height: 88px;
+    }
+
+    .p {
+        font-size: 40px;
+    }
+
+    .troph_p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .house {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}

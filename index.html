@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <p class="score">Монеты: <span id="score">0</span></p>
+        <button id="clickme" class="button">Начать игру</button>
+        <button id="clear" class="button">Закончить игру</button>
+        <div class=""><button id="upgrade" class="button">Увеличить очки за клик</button></div>
+    </div>
+
+    <div class="house" id="house1">
+        <div class="costhouse_but" id="costhouse_but1"><button class="buyunits" id="buyunits1" disabled>Купить 10м</button></div>
+        <img class="house_img" src="./assets/images/Без названия (4).jpg" alt="">
+        <div id="house_div1" class="House_div">
+            <div class="house_info">
+                <h2>Маленький уютный дом</h2>
+                <p class="p">Уровень: <i id="house_level1">1</i></p>
+                <p class="p">Стоимость: <i id="house_cost1">20</i>м</p>
+                <p class="p">Доход: <i id="house_income1">1</i>м/с</p>    
+            </div>
+            <p class="house-text">Описание: <i>Небольшой домик с камином. Идеальное место для отдыха от городской суеты.</i></p>
+            <div class="house_upb">
+                <button class="upgradeunits" id="upgradeunits1" disabled>Улучшить дом</button>     
+            </div>  
+        </div> 
+    </div>
+
+    <div class="house" id="house2">
+        <div id="costhouse_but2" class="costhouse_but"><button class="buyunits" id="buyunits2" disabled>Купить 300м</button></div>
+        <img class="house_img" src="./assets/images/Без названия.jpg" alt="">
+        <div id="house_div2" class="House_div">
+            <div class="house_info">
+                <h2>Дворец на озере</h2>
+                <p class="p">Уровень: <i id="house_level2">1</i></p>
+                <p class="p">Стоимость: <i id="house_cost2">600</i>м</p>
+                <p class="p">Доход: <i id="house_income2">10</i>м/с</p>
+            </div>
+            <p class="house-text">Описание: <i>Великолепный дворец с прудом и парком. Здесь всегда праздник.</i></p>
+            <div class="house_upb">
+                <button class="upgradeunits" id="upgradeunits2" disabled>Улучшить дом</button>     
+            </div>  
+        </div> 
+    </div>
+
+    <div class="house" id="house3">
+        <div class="costhouse_but" id="costhouse_but3"><button class="buyunits" id="buyunits3" disabled>Купить 400м</button></div>
+        <img class="house_img" src="./assets/images/Без названия (2).jpg" alt="">
+        <div id="house_div3" class="House_div">
+            <div class="house_info">
+                <h2>Замок на скале</h2>
+                <p class="p">Уровень: <i id="house_level3">1</i></p>
+                <p class="p">Стоимость: <i id="house_cost3">1000</i>м</p>
+                <p class="p">Доход: <i id="house_income3">20</i>м/с</p>
+            </div>
+            <p class="house-text">Описание: <i>Могущественный замок, стоящий на вершине скалы, охраняет секреты веков.</i></p>
+            <div class="house_upb">
+                <button class="upgradeunits" id="upgradeunits3" disabled>Улучшить дом</button>     
+            </div>  
+        </div> 
+    </div>
+
+    <div class="house" id="house4">
+        <div class="costhouse_but" id="costhouse_but4"><button class="buyunits" id="buyunits4" disabled>Купить 1000м</button></div>
+        <img class="house_img" src="./assets/images/Без названия (3).jpg" alt="">
+        <div id="house_div4" class="House_div">
+            <div class="house_info">
+                <h2>Гигантский небоскрёб</h2>
+                <p class="p">Уровень: <i id="house_level4">1</i></p>
+                <p class="p">Стоимость: <i id="house_cost4">5000</i>м</p>
+                <p class="p">Доход: <i id="house_income4">50</i>м/с</p>
+            </div>
+            <p class="house-text">Описание: <i>Небоскрёб с тысячами этажей, в котором всегда происходит что-то важное.</i></p>
+            <div class="house_upb">
+                <button class="upgradeunits" id="upgradeunits4" disabled>Улучшить дом</button>     
+            </div>  
+        </div> 
+    </div>
+
+    <h1 class="achivh1">Награды</h1>
+        
+
+        <div class="troph">
+            <div class="pp" >
+                <img id="troph_img2_d" class="troph_img" src="./assets/images/free-icon-trophy-5355134.png" alt="">
+                <img id="troph_img2_n" class="troph_img" src="./assets/images/free-icon-1st-prize-11167896.png" alt="">
+                <p id="pp2" class="troph_p">Купить все здания</p>
+                
+            </div>
+            <div class="pp" >
+                <img id="troph_img1_d" class="troph_img" src="./assets/images/free-icon-trophy-5355134.png" alt="">
+                <img id="troph_img1_n" class="troph_img" src="./assets/images/free-icon-trophy-cup-11167901.png" alt="">
+                <p id="pp1" class="troph_p">Cобрать 100 000 м</p>
+            </div>
+            
+            <div class="pp">
+                <img id="troph_img3_d" class="troph_img" src="./assets/images/free-icon-trophy-5355134.png" alt="">
+                <img id="troph_img3_n" class="troph_img" src="./assets/images/free-icon-gold-cup-8454171.png" alt="">
+                <p  id="pp3" class="troph_p">Улучшить все здания до 50 ур</p>
+            </div>
+        </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
